@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Simulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      font-size: 18px;
+      margin: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .success { background-color: #4CAF50; color: white; }
+    .cancel  { background-color: #ff9800; color: white; }
+    .fail    { background-color: #f44336; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Simulate Payment Result</h1>
+
+  <button class="success" onclick="redirectTo('https://www.instant-system.com/purchase-success')"> Success</button>
+  <button class="cancel" onclick="redirectTo('https://www.instant-system.com/purchase-cancel')"> Cancel</button>
+  <button class="fail" onclick="redirectTo('https://www.instant-system.com/purchase-failed')"> Fail</button>
+
+  <script>
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
